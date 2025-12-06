@@ -1,13 +1,17 @@
+import processing.sound.*; //applies sound library
+
 ArrayList<Target> targets;
 Scope scope;
 int score = 0;
 int hp = 5;
 boolean playing = true;
-PVector worldOffset;
-float speedMultiplier = 1;
+PVector worldOffset; //camera movement
+float speedMultiplier = 1; //This adjusts the speed of the targets where the targets get quicker everytime the player hits the target
+SoundFile soundEffect;
 
 void setup() {
   size(400, 400);
+  soundEffect = new SoundFile(this,"Gunshot Sound Effect.wav");
 
   targets = new ArrayList<Target>();
   scope = new Scope();
@@ -51,6 +55,7 @@ void playGame() {
 }
 
 void mousePressed() {
+  soundEffect.play();
   if (!playing) return;
 
   boolean hitSomething = false;
