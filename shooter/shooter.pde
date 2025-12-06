@@ -6,7 +6,6 @@ boolean playing = true;
 PVector worldOffset;
 float speedMultiplier = 1;
 
-//test
 void setup() {
   size(400, 400);
 
@@ -19,7 +18,7 @@ void setup() {
 }
 
 void draw() {
-  background(0, 156, 58);
+  background(100);
 
   if (playing) playGame();
   else gameOver();

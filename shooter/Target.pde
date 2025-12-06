@@ -6,9 +6,9 @@ class Target {
 
   Target() {
 
-    size = random(40, 70);
+    size = random(70, 110);
 
-    float y = random(120, height - 100);
+    float y = random(300, 400);
     float x = random(1) < 0.5 ? -size : width + size;
 
     pos = new PVector(x, y);
@@ -28,7 +28,7 @@ class Target {
     pushMatrix();
     translate(pos.x, pos.y);
     
-    stroke(0);
+    stroke(255);
     strokeWeight(3);
     noFill();
     
