@@ -6,9 +6,9 @@ class Target {
 
   Target() {
 
-    size = random(40, 70);
+    size = random(70, 110);
 
-    float y = random(120, height - 100);
+    float y = random(350, 400);
     float x = random(1) < 0.5 ? -size : width + size;
 
     pos = new PVector(x, y);

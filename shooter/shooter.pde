@@ -6,7 +6,6 @@ boolean playing = true;
 PVector worldOffset;
 float speedMultiplier = 1;
 
-//test
 void setup() {
   size(400, 400);
 
@@ -56,7 +55,6 @@ void mousePressed() {
 
   boolean hitSomething = false;
 
-  // scope center
   float sx = width/2;
   float sy = height/2;
   float scopeRadius = 75;     

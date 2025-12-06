@@ -16,7 +16,7 @@ class Scope {
 
   void display() {
     noFill();
-    stroke(156,0,0);
+    stroke(0);
     strokeWeight(2);
 
     ellipse(pos.x, pos.y, 350, 350);
@@ -24,7 +24,7 @@ class Scope {
     line(pos.x - 150, pos.y, pos.x + 150, pos.y);
     line(pos.x, pos.y - 150, pos.x, pos.y + 150);
 
-    fill(156,0,0);
+    fill(0);
     noStroke();
     ellipse(pos.x, pos.y, 8, 8);
   }
