@@ -18,7 +18,7 @@ void setup() {
 }
 
 void draw() {
-  background(0, 156, 58);
+  background(100);
 
   if (playing) playGame();
   else gameOver();
